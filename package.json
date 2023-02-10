@@ -1,0 +1,9 @@
+{
+  "name": "project-nasa",
+  "version": "1.0.0",
+  "description": "NASA Mission Control",
+  "main": "index.js",
+  "repository": "https://github.com/AbdulQuayyum/project-nasa.git",
+  "author": "Abdul-Quayyum",
+  "license": "MIT"
+}
