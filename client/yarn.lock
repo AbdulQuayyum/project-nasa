@@ -24,6 +24,76 @@
     jsonpointer "^5.0.0"
     leven "^3.1.0"
 
+"@arwes/animated@^1.0.0-next.4":
+  version "1.0.0-next.4"
+  resolved "https://registry.yarnpkg.com/@arwes/animated/-/animated-1.0.0-next.4.tgz#6278b2ca1a8551a3e122af6608e62c10ae51c53b"
+  integrity sha512-YZ6cLOHMH+Gbdz3uU1bNz/HUwz5Unw0c5xQN8c/Mv3LYllAr0NazB7pQ5vrgUYJI7QZNaERlhVnZNfpQBD+yqw==
+  dependencies:
+    tslib "^2.3.1"
+
+"@arwes/animation@^1.0.0-alpha.19":
+  version "1.0.0-alpha.19"
+  resolved "https://registry.yarnpkg.com/@arwes/animation/-/animation-1.0.0-alpha.19.tgz#cb5c915e13971eb9630b13b020b4a8a6ea6ab18a"
+  integrity sha512-Sstj816JbAhoH6cy1nLb8sQ5L4AbgdeXbFhjWNj8ZODAYA+dS/CjfY30CoAwIKIg04lAOiVOJkB20fXFcigqlQ==
+
+"@arwes/animator@^1.0.0-next.4":
+  version "1.0.0-next.4"
+  resolved "https://registry.yarnpkg.com/@arwes/animator/-/animator-1.0.0-next.4.tgz#9045daab39245c59415d55a218eb8da2d09161f6"
+  integrity sha512-C6zCylL5PJbNRSbmayZaA+1o7ipEKAseKowpWrT5ehIlzGyF8ci2f9CxkRFekpIiGbepDvJtW2kS9cWDxzVWMQ==
+  dependencies:
+    tslib "^2.3.1"
+
+"@arwes/bgs@^1.0.0-next.4":
+  version "1.0.0-next.4"
+  resolved "https://registry.yarnpkg.com/@arwes/bgs/-/bgs-1.0.0-next.4.tgz#598e0ee0aaa3398b9417bab40f1b9187c4f2f774"
+  integrity sha512-kxHIlXKc5AZTIe88UGyB3Xe4iwCOIiinrN2FaPNLWVF/AoWTz5/R36fhVl7+l78g5qDUvZRD0opkCN41vqMbgA==
+  dependencies:
+    tslib "^2.3.1"
+
+"@arwes/bleeps@^1.0.0-next.4":
+  version "1.0.0-next.4"
+  resolved "https://registry.yarnpkg.com/@arwes/bleeps/-/bleeps-1.0.0-next.4.tgz#8c354a1026f7aa2fe0c3efad50569f18f104a2f8"
+  integrity sha512-wisnK0CUNCfw/n0Wj8Z4nl2pTIj2ZCLm2WxK12tTX6T0IZJrBOh3cR7as36XmCyW+O1QpBier6dppodXlUHTxw==
+  dependencies:
+    tslib "^2.3.1"
+
+"@arwes/core@^1.0.0-alpha.19":
+  version "1.0.0-alpha.19"
+  resolved "https://registry.yarnpkg.com/@arwes/core/-/core-1.0.0-alpha.19.tgz#be7516d80fb934132ac1be2f6dde16b6e24b3862"
+  integrity sha512-gDLzxV/KWZKcoKNM1XFZBo3nr02aRODVpMXq57ylZcbkGN3U7fNq2ZdBT0ZrQHmU6SKPf1TTNZXSrMn3b6jiSg==
+
+"@arwes/design@^1.0.0-alpha.19":
+  version "1.0.0-alpha.19"
+  resolved "https://registry.yarnpkg.com/@arwes/design/-/design-1.0.0-alpha.19.tgz#e8fe56c57277b74b10e54b16a97fea5132e01a8f"
+  integrity sha512-HVRgrGmcaDZ52UJFYZY3enQZcRThLIjDivFzPNo6h0LC4De8wxnbvGJJgL6B+qPJcb3FJvIJ6xaAp1Qd46itiQ==
+
+"@arwes/sounds@^1.0.0-alpha.19":
+  version "1.0.0-alpha.19"
+  resolved "https://registry.yarnpkg.com/@arwes/sounds/-/sounds-1.0.0-alpha.19.tgz#329ac8d93eb66093bebb0d857a70623d800e012d"
+  integrity sha512-DtTR+jD9K0CVtx/75iuvVB5DuVo9Ao/QZqZxV9mMpOaPNZJI9HoI+E6mysjIMLTjORRLbPqzmwpqEgI9qOZUJg==
+
+"@arwes/text@^1.0.0-next.4":
+  version "1.0.0-next.4"
+  resolved "https://registry.yarnpkg.com/@arwes/text/-/text-1.0.0-next.4.tgz#953c9a43e4a42d654489b034e91a74bc1f056914"
+  integrity sha512-W9N0f1jQCvKZb1XHfO07pRqd1+g7zqVq9i/4kyn5xu2EdoH8XyMCNfbUX2vfyoJF2WoqAWHOK0SgJVxiKAGUhA==
+  dependencies:
+    tslib "^2.3.1"
+
+"@arwes/theme@^1.0.0-next.4":
+  version "1.0.0-next.4"
+  resolved "https://registry.yarnpkg.com/@arwes/theme/-/theme-1.0.0-next.4.tgz#d8438900617a2a155c2e3d846f5dafda732946d0"
+  integrity sha512-Yg2x0MG1FIExXa5z0DC7a1dKP0ZtS4wgc/5ODWJYxqGsSb8qr9a57kUOg4SP3QpumGbi90Tzj7LHy4L0zC+xbw==
+  dependencies:
+    csstype "^3.0.11"
+    tslib "^2.3.1"
+
+"@arwes/tools@^1.0.0-next.4":
+  version "1.0.0-next.4"
+  resolved "https://registry.yarnpkg.com/@arwes/tools/-/tools-1.0.0-next.4.tgz#06bbaa310a3899656af5549d7ba63301010326da"
+  integrity sha512-DPNG6OFkplGVLo+82oFqSDuSQ6bjTcdeqcF3vrYLgAEhVy1ojU+SkSyI9jeQKk9uzuCBbs42Xj8wGspWGkwQPA==
+  dependencies:
+    tslib "^2.3.1"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.16.0", "@babel/code-frame@^7.18.6", "@babel/code-frame@^7.8.3":
   version "7.18.6"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.18.6.tgz#3b25d38c89600baa2dcc219edfa88a74eb2c427a"
@@ -1573,6 +1643,11 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
+"@remix-run/router@1.3.2":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.3.2.tgz#58cd2bd25df2acc16c628e1b6f6150ea6c7455bc"
+  integrity sha512-t54ONhl/h75X94SWsHGQ4G/ZrCEguKSRQr7DrjTciJXW0YU1QhlwYeycvK5JgkzlxmvrK7wq1NB/PLtHxoiDcA==
+
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-babel/-/plugin-babel-5.3.1.tgz#04bc0608f4aa4b2e4b1aebf284344d0f68fda283"
@@ -2601,6 +2676,20 @@ array.prototype.tosorted@^1.1.1:
     es-shim-unscopables "^1.0.0"
     get-intrinsic "^1.1.3"
 
+arwes@^1.0.0-next.4:
+  version "1.0.0-next.4"
+  resolved "https://registry.yarnpkg.com/arwes/-/arwes-1.0.0-next.4.tgz#317d0b6e74fb7598a6d8855df68fc345decf4692"
+  integrity sha512-6I1WbKMJQdZ1k8dqgzx3WoU8WwiAjd6D2MuCiquplmw3nmbuwk+/ioVz+p8EmJcbpTQRgYEnfW3GCPA50EEYMg==
+  dependencies:
+    "@arwes/animated" "^1.0.0-next.4"
+    "@arwes/animator" "^1.0.0-next.4"
+    "@arwes/bgs" "^1.0.0-next.4"
+    "@arwes/bleeps" "^1.0.0-next.4"
+    "@arwes/text" "^1.0.0-next.4"
+    "@arwes/theme" "^1.0.0-next.4"
+    "@arwes/tools" "^1.0.0-next.4"
+    tslib "^2.3.1"
+
 asap@~2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
@@ -3465,7 +3554,7 @@ cssstyle@^2.3.0:
   dependencies:
     cssom "~0.3.6"
 
-csstype@^3.0.2:
+csstype@^3.0.11, csstype@^3.0.2:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.1.tgz#841b532c45c758ee546a11d5bd7b7b473c8c30b9"
   integrity sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==
@@ -7489,6 +7578,21 @@ react-refresh@^0.11.0:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"
   integrity sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A==
 
+react-router-dom@^6.8.1:
+  version "6.8.1"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.8.1.tgz#7e136b67d9866f55999e9a8482c7008e3c575ac9"
+  integrity sha512-67EXNfkQgf34P7+PSb6VlBuaacGhkKn3kpE51+P6zYSG2kiRoumXEL6e27zTa9+PGF2MNXbgIUHTVlleLbIcHQ==
+  dependencies:
+    "@remix-run/router" "1.3.2"
+    react-router "6.8.1"
+
+react-router@6.8.1:
+  version "6.8.1"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.8.1.tgz#e362caf93958a747c649be1b47cd505cf28ca63e"
+  integrity sha512-Jgi8BzAJQ8MkPt8ipXnR73rnD7EmZ0HFFb7jdQU24TynGW1Ooqin2KVDN9voSC+7xhqbbCd2cjGUepb6RObnyg==
+  dependencies:
+    "@remix-run/router" "1.3.2"
+
 react-scripts@5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-5.0.1.tgz#6285dbd65a8ba6e49ca8d651ce30645a6d980003"
@@ -8529,7 +8633,7 @@ tslib@^1.8.1:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.0.3:
+tslib@^2.0.3, tslib@^2.3.1:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.5.0.tgz#42bfed86f5787aeb41d031866c8f402429e0fddf"
   integrity sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==
