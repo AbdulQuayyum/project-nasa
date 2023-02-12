@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "NASA Mission Control",
   "main": "index.js",
+  "scripts": {
+    "server": "yarn watch --prefix Server",
+    "client": "yarn start --prefix client",
+    "watch": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": "https://github.com/AbdulQuayyum/project-nasa.git",
   "author": "Abdul-Quayyum",
   "license": "MIT"
