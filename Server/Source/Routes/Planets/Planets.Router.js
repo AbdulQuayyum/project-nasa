@@ -1,6 +1,6 @@
 const express = require('express')
 
-const PlanetsRouter = require('./r')
+const { GetALLPlanets } = require('../../Controllers/Planets.Controller')
 
 const PlanetsRouter = express.Router()
 
