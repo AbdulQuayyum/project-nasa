@@ -1,5 +1,7 @@
 const express = require('express')
 const cors = require('cors')
+const path = require('path')
+const morgan = require('morgan')
 
 const dotenv = require('dotenv')
 dotenv.config()
@@ -11,7 +13,14 @@ const app = express()
 app.use(cors({
     origin: 'https://localhost:3000'
 }))
-app.use(express.json())
-app.use(PlanetsRouter)
 
-module.exports = app
+app.use(morgan('combined'))
+app.use(express.json())
+app.use(express.static(path.join(__dirname, '..', Public)))
+
+app.use(PlanetsRouter)
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', Public, 'Index.html'))
+})
+
+module.exports = app 

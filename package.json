@@ -4,10 +4,10 @@
   "description": "NASA Mission Control",
   "main": "index.js",
   "scripts": {
-    "server": "yarn watch --prefix Server",
-    "client": "yarn start --prefix client",
-    "watch": "",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "npm run watch --prefix Server",
+    "client": "npm start --prefix client",
+    "watch": "npm run server & npm run client",
+    "test": "npm run test --prefix Server && npm run test --prefix client"
   },
   "repository": "https://github.com/AbdulQuayyum/project-nasa.git",
   "author": "Abdul-Quayyum",
