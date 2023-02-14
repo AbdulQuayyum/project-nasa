@@ -5,16 +5,19 @@ if (process.env.STATUS === "development") {
     ENDPOINT_URL = process.env.PROD_ENDPOINT_URL
 }
 
+// Load planets and return as JSON.
 async function httpGetPlanets() {
-    // TODO: Once API is ready.
-    // Load planets and return as JSON.
     const response = await fetch(`${ENDPOINT_URL}/Planets`)
     return await response.json()
 }
 
+// Load launches, sort by flight number, and return as JSON.
 async function httpGetLaunches() {
-    // TODO: Once API is ready.
-    // Load launches, sort by flight number, and return as JSON.
+    const response = await fetch(`${ENDPOINT_URL}/Launches`)
+    const FetchedLaunches = await response.json()
+    return FetchedLaunches.sort((a, b) => {
+        return a.flightNumber - b.flightNumber
+    })
 }
 
 async function httpSubmitLaunch(launch) {

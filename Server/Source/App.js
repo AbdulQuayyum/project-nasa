@@ -17,12 +17,12 @@ app.use(cors({
 
 app.use(morgan('combined'))
 app.use(express.json())
-app.use(express.static(path.join(__dirname, '..', Public)))
+app.use(express.static(path.join(__dirname, '..', 'Public')))
 
 app.use(LaunchesRouter)
 app.use(PlanetsRouter)
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', Public, 'Index.html'))
+    res.sendFile(path.join(__dirname, '..', 'Public', 'Index.html'))
 })
 
 module.exports = app 

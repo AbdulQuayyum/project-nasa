@@ -23,7 +23,7 @@ console.log(result)
 
 function LoadPlanetsData() {
     return new Promise((resolve, reject) => {
-        fs.createReadStream(path.join(__dirname, '..', '..', 'Data', 'Data/KeplerData.csv'))
+        fs.createReadStream(path.join(__dirname, '..', '..', 'Data', '/KeplerData.csv'))
         // fs.createReadStream('Data/KeplerData.csv')
             .pipe(parse({
                 comment: "#",

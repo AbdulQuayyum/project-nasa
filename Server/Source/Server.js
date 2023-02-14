@@ -1,7 +1,7 @@
 const http = require('http');
 
 const app = require('./App')
-const { LoadPLanetsData } = require('./Models/Planets.Model')
+const { LoadPlanetsData } = require('./Models/Planets.Model')
 
 const server = http.createServer(app)
 
@@ -12,7 +12,7 @@ process.env.STATUS === "development"
     : (PORT = process.env.PROD_ENDPOINT_URL)
 
 async function StartServer() {
-    await LoadPLanetsData()
+    await LoadPlanetsData()
 
     server.listen(PORT, () => {
         console.log(`Server is in ${process.env.STATUS} mode, listening on port ${PORT}`)
