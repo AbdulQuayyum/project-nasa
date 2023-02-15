@@ -24,7 +24,7 @@ console.log(result)
 function LoadPlanetsData() {
     return new Promise((resolve, reject) => {
         fs.createReadStream(path.join(__dirname, '..', '..', 'Data', '/KeplerData.csv'))
-        // fs.createReadStream('Data/KeplerData.csv')
+            // fs.createReadStream('Data/KeplerData.csv')
             .pipe(parse({
                 comment: "#",
                 columns: true,
@@ -46,9 +46,13 @@ function LoadPlanetsData() {
                 resolve()
             })
     })
-} 
+}
+
+function GetAllPlanets() {
+    return HabitablePlanetListsS
+}
 
 module.exports = {
     LoadPlanetsData,
-    Planets: HabitablePlanetLists,
+    GetAllPlanets
 }
