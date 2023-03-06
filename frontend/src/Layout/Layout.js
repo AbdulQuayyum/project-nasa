@@ -2,16 +2,16 @@ import { useState } from "react"
 import { Switch, Route } from "react-router-dom"
 import { Frame, withSounds, withStyles } from "arwes"
 
-import usePlanets from "../Hooks/UsePlanets"
-import UseLaunches from "../Hooks/UseLaunches"
+import usePlanets from "../../../client/src/Hooks/UsePlanets"
+import UseLaunches from "../../../client/src/Hooks/UseLaunches"
 
-import Centered from "../Components/Centered"
-import Header from "../Components/Header"
-import Footer from "../Components/Footer"
+import Centered from "../../../client/src/Components/Centered"
+import Header from "../../../client/src/Components/Header"
+import Footer from "../../../client/src/Components/Footer"
 
-import Launch from "../Views/Launch"
-import History from "../Views/History"
-import Upcoming from "../Views/Upcoming"
+import Launch from "../../../client/src/Views/Launch"
+import History from "../../../client/src/Views/History"
+import Upcoming from "../../../client/src/Views/Upcoming"
 
 const styles = () => ({
   content: {
