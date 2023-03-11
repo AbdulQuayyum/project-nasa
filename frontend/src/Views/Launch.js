@@ -18,14 +18,14 @@ const Launch = () => {
       <div>
         <div className="info-div flex items-center flex-col justify-center">
           <h3>
-            Schedule a mission launch for interstellar travel to one of the Kepler Exoplanets
+            Schedule a mission launch for interstellar travel to one of the Kepler Exoplanets.
           </h3>
 
           <h3>
             Only confirmed planets matching the following criteria are available for the earliest scheduled missions:
           </h3>
           <ul>
-            <li>Planetary radius 1.6 times Earth's radius</li>
+            <li>Planetary radius 1.6 times Earth's radius.</li>
             <li>Effective stellar flux 0.36 times Earth's value and 1.11 times Earth's value</li>
           </ul>
         </div>
