@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useState, useRef, useEffect } from 'react';
+import Flatpickr from 'react-flatpickr'
 import Layout from '../Layout/Layout'
 
+import "flatpickr/dist/flatpickr.css";
+
 const Launch = () => {
+  const [picker, setPicker] = useState(new Date())
+  const [missionName, setMissionName] = useState("")
+
+  const handleMissionName = (event) => {
+    const value = event.target.value.replace(/\D/g, "");
+    setMissionName(value);
+  }
+
   return (
     <Layout>
       <div>
-        <div className="info-div">
+        <div className="info-div flex items-center flex-col justify-center">
           <h3>
             Schedule a mission launch for interstellar travel to one of the Kepler Exoplanets
           </h3>
@@ -18,27 +29,48 @@ const Launch = () => {
             <li>Effective stellar flux 0.36 times Earth's value and 1.11 times Earth's value</li>
           </ul>
         </div>
-        <div className="main-div">
-          <div className="main-div-sub">
-            <h3>
+        <div className="main-div flex items-center justify-center">
+          <div className="main-div-sub w-full py-4 flex items-center justify-center">
+            <label className='form-label' htmlFor='default-picker'>
               Launch Date
-            </h3>
-            <div className="flex items-center justify-center">
-              <div
-                className="relative mb-3 xl:w-96"
-                dataTeDatepickerInit
-                dataTeInputWrapperInit>
-                <input
-                  type="text"
-                  className="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                  placeholder="Select a date" />
-                <label
-                  htmlFor="floatingInput"
-                  className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-neutral-200"
-                >Select a date
-                </label>
-              </div>
-            </div>
+            </label>
+            <Flatpickr className='' value={picker} onChange={date => setPicker(date)} id='default-picker' />
+          </div>
+          <div className="main-div-sub w-full py-4 flex items-center justify-center">
+            <label
+              htmlFor="base-input"
+              className="block mb-2 text-base font-semibold text-start"
+            >
+              Enter Mission Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              value={missionName}
+              onChange={handleMissionName}
+              required
+              placeholder="Enter Mission Name"
+              id="base-input"
+              className="bg-[#F7F7F7] text-gray-400 text-lg rounded-xl outline-none focus:bg-[#F0F0F0] block w-full px-5 py-2.5 dark:placeholder-gray-400"
+            />
+          </div>
+          <div className="main-div-sub w-full py-4 flex items-center justify-center">
+            <label
+              htmlFor="base-input"
+              className="block mb-2 text-base font-semibold text-start"
+            >
+              Enter Mission Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              value={missionName}
+              onChange={handleMissionName}
+              required
+              placeholder="Enter Mission Name"
+              id="base-input"
+              className="bg-[#F7F7F7] text-gray-400 text-lg rounded-xl outline-none focus:bg-[#F0F0F0] block w-full px-5 py-2.5 dark:placeholder-gray-400"
+            />
           </div>
         </div>
       </div>
