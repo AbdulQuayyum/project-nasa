@@ -12,6 +12,8 @@ const Launch = (props) => {
   const [rocketType, setrocketType] = useState("")
   const [selected, setSelected] = useState("")
   const [newData, setNewData] = useState("")
+  
+  const today = new Date().toISOString().split("T")[0]
 
   const selectorBody = useMemo(() => {
     return props.planets?.map(planet =>
@@ -78,7 +80,7 @@ const Launch = (props) => {
               className="block mb-2 text-base font-semibold text-start" htmlFor='default-picker'>
               Launch Date
             </label>
-            <Flatpickr className='bg-[#F7F7F7] text-gray-400 text-lg rounded-xl outline-none focus:bg-[#F0F0F0] block px-5 py-2.5 dark:placeholder-gray-400' value={picker} onChange={date => setPicker(date)} id='default-picker' />
+            <Flatpickr className='bg-[#F7F7F7] text-gray-400 text-lg rounded-xl outline-none focus:bg-[#F0F0F0] block px-5 py-2.5 dark:placeholder-gray-400' min={today} max="2040-12-31" defaultValue={today}  value={picker} onChange={date => setPicker(date)} id='default-picker' />
           </div>
           <div className="main-div-sub gap-5 py-4 flex items-center justify-center">
             <label
@@ -110,8 +112,8 @@ const Launch = (props) => {
               name="name"
               value={rocketType}
               onChange={handleRocketType}
-              required
-              placeholder="Enter Rocket Type"
+              required 
+              defaultValue="Explorer IS1" 
               id="base-input"
               className="bg-[#F7F7F7] text-gray-400 text-lg rounded-xl outline-none focus:bg-[#F0F0F0] block w-full px-5 py-2.5 dark:placeholder-gray-400"
             />
